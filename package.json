@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
   },
   "author": "Capitanalgosa",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.0.0",
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
