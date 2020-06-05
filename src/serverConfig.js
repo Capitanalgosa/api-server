@@ -16,5 +16,8 @@ app.use(cors());
 //ROUTES
 
 app.use('/api', require('./routes/render'));
+app.use('/', function(req,res){
+    res.redirect('/api');
+});
 
 module.exports = app;
