@@ -1,0 +1,1 @@
+start "mongod" cmd /k mongod & timeout /t 5 & start "angular" cmd /k "cd ../tupirata & ng serve" & start "server" cmd /k nodemon src/index.js & timeout /t 60 & start "Pagina Guep" chrome http://localhost:4200/ & echo hola

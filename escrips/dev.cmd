@@ -1,0 +1,1 @@
+start "mongod" cmd /k mongod & timeout /t 5 & start "server" cmd /k nodemon ../src/index.js &  start "Pagina Guep" chrome http://localhost:3000/
