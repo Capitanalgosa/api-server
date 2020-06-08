@@ -18,6 +18,7 @@ app.use(cors());
 //ROUTES
 
 app.use('/api', require('./routes/render'));
+app.use('/tsa-mean-api', require('./routes/Interaccion'));
 app.use('/', function(req,res){
     res.redirect('/api');
 });
