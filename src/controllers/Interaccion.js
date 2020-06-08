@@ -1,6 +1,6 @@
-const Categoria = require('./../models/categoriasModel');
-const Articulos = require('./../models/articuloModel');
-const Admin = require('./../models/adminModel');
+const Categoria = require('../models/categoriasModel');
+const Articulos = require('../models/articuloModel');
+const Admin = require('../models/adminModel');
 
 const chalk = require('chalk');
 const jwt = require('jsonwebtoken');

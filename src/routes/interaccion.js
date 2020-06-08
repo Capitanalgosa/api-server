@@ -1,6 +1,6 @@
 const express= require('express');
 const router = express.Router();
-const tsaMeanApi = require('../Controllers/Interaccion');
+const tsaMeanApi = require('../controllers/interaccion');
 
 router.route('/admin/edit-articulos/:id')
 .put(tsaMeanApi.verifyToken , tsaMeanApi.updateArt)
