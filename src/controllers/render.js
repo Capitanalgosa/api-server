@@ -36,4 +36,8 @@ render.goHome = (req,res) => {
     res.redirect('/api/home');
 }
 
+render.error = (req,res) => {
+    console.log("Estas pidiendo CArajo o dd");
+    res.sendStatus(200);
+}
 module.exports = render;

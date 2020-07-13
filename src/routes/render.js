@@ -7,6 +7,7 @@ router.get('/home', render.cient);
 router.get('/home/*', render.notFound); 
 router.get('/admin', render.admin);
 router.get('/admin/*', render.notFound);
-router.get('/*', render.notFound);
+router.get('/admin/*', render.notFound);
+router.get('*', render.notFound);
 
 module.exports = router;
